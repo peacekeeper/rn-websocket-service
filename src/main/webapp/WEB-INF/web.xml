@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<display-name>rn-websocket-service</display-name>
+
+	<filter>
+		<filter-name>init</filter-name>
+		<filter-class>biz.neustar.clouds.chat.InitFilter</filter-class>
+		<load-on-startup>1</load-on-startup>
+		<init-param>
+			<param-name>discovery</param-name>
+			<param-value>http://dev-registry.respectnetwork.net:3081/registry</param-value>
+		</init-param>
+	</filter>
+
+</web-app> 
